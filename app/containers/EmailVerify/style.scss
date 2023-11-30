@@ -1,0 +1,158 @@
+section.email-verify-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    .signup-left {
+        width: 600px;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f72585;
+        img {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .slick-slider {
+            height: 100vh;
+            button.slick-arrow {
+                display: none;
+            }
+            ul.slick-dots {
+                display: flex !important;
+                flex-wrap: wrap;
+                position: absolute;
+                bottom: 20px;
+                justify-content: center;
+                width: 100%;
+                li {
+                    list-style: none;
+                    margin: 0px;
+                    button {
+                        &::before {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .signup-right {
+        width: calc(100% - 600px);
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 6% 0;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            width:0px;
+            height: 0;
+        }
+        .signup-form {
+            max-width: 460px;
+            width: 100%;
+            .logo {
+                width: 140px;
+                margin-bottom: 20px;
+            }
+            h1 {
+                font-weight: 700;
+                line-height: 1.5;
+            }
+            >span {
+                color: rgba(17, 20, 45, 0.6);
+                display: block;
+                position: relative;
+                b {
+                    font-weight: 600;
+                    color: #f72485;
+                }
+            }
+            p {
+                text-align: center;
+                color: grey;
+                margin-top: 10%;
+                a {
+                    color: #f72585;
+                }
+            }
+            p.resend-otp {
+                color: rgba(17, 20, 45, 1);
+                text-align: left;
+                margin-top: 0;
+                margin-bottom: 24px;
+                i {
+                    color: #f72485;
+                    font-style: normal;
+                    cursor: pointer;
+                }
+            }
+            form {
+                margin-top: 10%;
+                label.ant-checkbox-wrapper {
+                    margin-top: -15px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    a {
+                        color: #f72485;
+                    }
+                }
+                .ant-btn {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+section.email-verify-section {
+    .signup-left {
+        width: 40%;
+    }
+    .signup-right {
+        width: 60%;
+        .signup-form {
+            max-width: 70%;
+        }
+    }
+}
+}
+
+@media screen and (max-width: 991px) {
+section.email-verify-section {
+    .signup-left {
+        width: 50%;
+    }
+    .signup-right {
+        width: 50%;
+        .signup-form {
+            max-width: 80%;
+        }
+    }
+}
+}
+
+@media screen and (max-width: 767px) {
+section.email-verify-section {
+    .signup-left {
+        display: none;
+    }
+    .signup-right {
+        width: 100%;
+        padding: 5% 8%;
+        .signup-form {
+            max-width: 100%;
+            h1 {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+}

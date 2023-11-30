@@ -1,0 +1,136 @@
+.wallet-main-section {
+    .wallet-summary {
+        margin-top: 40px;
+        border: 1px solid #f72485;
+        border-radius: 15px;
+        h6 {
+            text-align: center;
+            background: #f72485;
+            color: #fff;
+            padding: 10px;
+            border-radius: 15px 15px 0 0;
+            font-size: 18px;
+        }
+        ul {
+            li {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                color: #000;
+                font-size: 16px;
+                &:nth-child(1) {
+                    background: #dfdfdf;
+                    font-weight: 600;
+                }
+                >span {
+                    width: 25%;
+                    text-align: center;
+                    padding: 15px;
+                    border-left: 1px solid #cdcdcd;
+                    &:first-child {
+                        border: 0;
+                    }
+                    em {
+                        font-style: normal;
+                        color: #00eb00;
+                    }
+                }
+            }
+        }
+    }
+    .wallet-data {
+        margin-top: 40px;
+        box-shadow: 0 1.0566px 10.566px #00000026;
+        border-radius: 10px;
+        background: #fff;
+        .wallet-card-header {
+            border-bottom: 1px solid #e6e3e3;
+            padding: 10px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 30px;
+            ul {
+                margin-left: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    list-style: none;
+                    background: #f72485;
+                    color: #fff;
+                    padding: 8px 14px;
+                    border-radius: 5px;
+                    border: none;
+                    transition: 300ms ease-in-out;
+                    font-weight: 500;
+                    font-size: 12px;
+                    cursor: pointer;
+                    margin-left: 10px;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    &:hover {
+                        background: #29394f;
+                    }
+                }
+            }
+        }
+        .wallet-card-body { 
+            padding: 20px;
+            table {
+                tbody {
+                    tr {
+                        td {
+                            cursor: default;
+                        }
+                    }
+                }
+            }
+            .wallet-no-data {
+                text-align: center;
+                padding: 15% 0;
+                width: 100%;
+                img {
+                    width: 200px;
+                }
+                h6 {
+                    margin-top: 10px;
+                }
+                p {
+                    color: #0000009c;
+                    font-weight: 300;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+.wallet-credit-modal {
+    .ant-modal-body {
+        h6 {
+            text-align: center;
+            padding: 20px;
+            font-weight: 500;
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            .ant-form-item {
+                width: calc((100% - 30px) / 2);
+                margin-left: 15px;
+                &:nth-child(2n+1) {
+                    margin-left: 0;
+                }
+                button.ant-btn {
+                    width: 100%;
+                    padding: 14px 24px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

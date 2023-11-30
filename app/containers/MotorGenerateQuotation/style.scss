@@ -1,0 +1,166 @@
+.motor-quotation-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5% 0;
+    .motor-quotation-left {
+        width: 100%;
+        h6 {
+            font-size: 18px;
+        }
+        p {
+            font-weight: 400;
+        }
+        form {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            .ant-form-item {
+                width: calc((100% - 60px) / 4);
+                margin-right: 15px;
+                input.ant-input {
+                    background: #fff !important;
+                    border: 1px solid #e1e1e1;
+                }
+                .ant-btn {
+                    padding: 14px 30px;
+                }
+                &:last-child {
+                    width: 100%;
+                }
+            }
+            .plan-input {
+                position: relative;
+                width: calc((100% - 60px) / 4);
+                .anticon-info-circle {
+                    position: absolute;
+                    z-index: 1;
+                    left: 19%;
+                    top: 4px;
+                    color: #4cc9f0;
+                    cursor: pointer;
+                }
+                .ant-select-selector {
+                    padding: 11px;
+                }
+            }
+            .tooltip-input-item {
+                width: calc((100% - 60px) / 4);
+                margin-right: 15px;
+                position: relative;
+                span.input-tooltip {
+                    position: absolute;
+                    z-index: 1;
+                    right: 0;
+                    top: -2px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .motor-quotation-right {
+        width: 45%;
+        img {
+            width: 70%;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
+
+.ant-modal.motor-quotation-modal {
+    .ant-modal-header, button.ant-modal-close {
+        display: none;
+    }
+    .ant-modal-body {
+        text-align: center;
+        padding: 0 30px 30px !important; 
+        h6 {
+            font-weight: 500;
+            span.success-blink {
+                animation: success 1s ease-in-out infinite;
+            }
+            @keyframes success {
+                0% {
+                    color: #000;
+                }
+                100% {
+                    color: #5cb85b;
+                }
+            }
+        }
+        button.dismiss-btn {
+            width: 100%;
+            margin-top: 33px;
+        }
+        img {
+            margin: 0 auto;
+            display: block;
+        }
+        p {
+            font-weight: 500;
+            font-size: 17px;
+            text-align: center;
+        }
+    }
+}
+
+.motor-plans-modal {
+    .plan-grid {
+        h3 {
+            font-size: 16px;
+        }
+        h5 {
+            color: #4261ee;
+            font-size: 16px;
+            margin-top: 8px;
+        }
+        .plan-csv-btn {
+            background-color: #4261ee;
+            color: #fff;
+            padding: 14px;
+            border-radius: 6px;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-left: 20px;
+    
+            li {
+                width: 45%;
+                position: relative;
+                margin-top: 15px;
+                &::before {
+                    content: "";
+                    background: rgba(162, 196, 56, 0.8);
+                    opacity: 0.15;
+                    position: absolute;
+                    left: -25px;
+                    top: 1px;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                }
+    
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: -18px;
+                    top: 5px;
+                    width: 5px;
+                    height: 9px;
+                    border: solid #A2C438;
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+
+    .plan-grid.download {
+        padding: 30px;
+        text-align: center;
+    }
+}

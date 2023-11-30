@@ -1,0 +1,138 @@
+.sidebar-tab-content {
+    .get-started-section {
+        text-align: center;
+        padding: 4% 0;
+        p {
+            max-width: 700px;
+            width: 100%;
+            margin: 0 auto;
+            line-height: 1.8;
+            margin-top: 5px;
+        }
+    }
+    .activate-account {
+        box-shadow: 0 1.0566px 10.566px #00000026;
+        border-radius: 10px;
+        padding: 30px 0 12px 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        background: #fff;
+        max-width: 900px;
+        width: 100%;
+        .activate-account-content {
+            width: calc(100% - 258px);
+            h2.activate-account-title {     
+                display: flex;
+                align-items: center;
+                height: 100%;
+                max-width: 400px;
+                margin-top: -10px;
+            }
+            p {
+                margin-top: 10px;
+            }
+            button {
+                margin-top: 14px;
+                display: flex;
+                align-items: center;
+            }
+        }
+        .activate-account-image {
+            width: 258px;
+            img {
+                width: 100%;
+                transform: scale(1.2) translateY(-20px);
+            }
+        }
+    }
+    .secret-key {
+        box-shadow: 0 1.0566px 10.566px #00000026;
+        border-radius: 10px;
+        padding: 30px 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 5% auto 0;
+        background: #fff;
+        max-width: 900px;
+        width: 100%;
+        .activate-account-content {
+            width: 60%;
+            p {
+                font-size: 16px;
+                margin-top: 10px;
+                color: #919191;
+            }
+        }
+        .secret-key-right {
+            text-align: center;
+            line-height: 0;
+            >span.anticon {
+                cursor: pointer;
+                font-size: 20px;
+            }
+            span.copy-icon {
+                margin-top: 11px;
+                background: #f72585;
+                color: #fff;
+                line-height: 0;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                font-size: 14px;
+                cursor: pointer;
+                transition: 300ms ease-in-out;
+                &:hover {
+                    background: #4cc9f0;
+                }
+            }  
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+.sidebar-tab-content {
+    .get-started-section {
+        padding: 80px 0 30px;
+    }
+}
+}
+
+@media screen and (max-width: 767px) {
+.sidebar-tab-content {
+    .activate-account {
+        padding: 20px;
+        .activate-account-content {
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+            h2.activate-account-title {     
+                margin-top: 0px;
+                justify-content: center;
+                font-size: 16px;
+            }
+            button {
+                margin: 14px auto 0;
+            }
+        }
+        .activate-account-image {
+            order: -1;
+            margin: 0 auto;
+            img {
+                transform: scale(1) translateY(0px);
+            }
+        }
+    }
+    .secret-key {
+        padding: 20px;
+        .activate-account-content {
+            width: calc(100% - 36px);
+        }
+    }
+}
+}

@@ -1,0 +1,535 @@
+.personal-accident-policy-main-section {
+    .policy-card-inner {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        .policy-card {
+            box-shadow: 0 1.0566px 10.566px #00000026;
+            border-radius: 10px;
+            width: calc((100% - 60px) / 4);
+            margin-left: 15px;
+            padding: 15px;
+            background: #fff;
+            border: 1px solid #f7248500;
+            cursor: pointer;
+            &:first-child {
+                margin-left: 0;
+            }
+            p {
+                color: #0000009c;
+                font-weight: 500;
+            }
+            h2 {
+                font-size: 26px;
+                font-weight: 600;
+                margin-top: 15px;
+                line-height: 1;
+            }
+        }
+        .policy-card.active {
+            border: 1px solid #f72485;
+        }
+    }
+    .policy-data {
+        margin-top: 40px;
+        box-shadow: 0 1.0566px 10.566px #00000026;
+        border-radius: 10px;
+        background: #fff;
+        .policy-card-header {
+            border-bottom: 1px solid #e6e3e3;
+            padding: 10px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 30px;
+            ul {
+                margin-left: 10px;
+                li {
+                    list-style: none;
+                    background: #f72485;
+                    color: #fff;
+                    padding: 8px 14px;
+                    border-radius: 5px;
+                    border: none;
+                    transition: 300ms ease-in-out;
+                    font-weight: 500;
+                    font-size: 12px;
+                    cursor: pointer;
+                    &:hover {
+                        background: #29394f;
+                    }
+                }
+            }
+        }
+        .policy-card-body { 
+            padding: 20px;
+            .policy-no-data {
+                text-align: center;
+                padding: 15% 0;
+                width: 100%;
+                img {
+                    width: 200px;
+                }
+                h6 {
+                    margin-top: 10px;
+                }
+                p {
+                    color: #0000009c;
+                    font-weight: 300;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .underwriting-policy-header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background: #F2F4FA;
+        border-radius: 8px;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 16px;
+        position: relative;
+        margin-top: 30px;
+        span {
+            background: rgba(30, 17, 71, 0.04);
+            border-radius: 6px;
+            padding: 9px 13px;
+            margin-right: 16px;
+            cursor: pointer;
+            transition: 300ms ease-in-out;
+        }
+        em {
+            font-style: normal;
+        }
+    }
+    .underwriting-insurance-data {
+        border-radius: 10px;
+        background: #fff;
+        margin-top: 12px;
+        box-shadow: 0 0px 20px 0 #00000014;
+        position: relative;
+
+        .underwriting-insurance-header {
+            padding: 24px 24px 4px;
+            border: 0;
+
+            h6 {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                width: calc(100% - 520px);
+
+                span.insured-name {
+                    background: rgba(30, 17, 71, 0.48);
+                    width: 56px;
+                    height: 56px;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    margin-right: 16px;
+                    font-size: 23px;
+                    text-transform: uppercase;
+                }
+
+                >em {
+                    font-style: normal;
+                    width: calc(100% - 91px);
+                    text-transform: capitalize;
+
+                    em {
+                        display: block;
+                        font-size: 14px;
+                        font-style: normal;
+                        margin-top: 5px;
+                        font-weight: 400;
+
+                        strong {
+                            font-weight: 400;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+            span.policy-pdf, span.certificate-pdf {
+                position: absolute;
+                top: 10px;
+                right: 45px;
+                border: 1px solid #f72485;
+                width: 51px;
+                height: 55px;
+                display: inline-block;
+                border-radius: 4px;
+                margin-left: 5px;
+                cursor: pointer;
+                font-size: 7px;
+                text-align: center;
+                word-break: break-all;
+                img {
+                    width: 100%;
+                    filter: none;
+                    border-radius: 4px;
+                }
+                strong {
+                    margin-top: 10px;
+                    display: block;
+                    color: #000;
+                }
+            }
+            span.certificate-pdf {
+                right: 100px;
+            }
+        }
+        .underwriting-insurance-body {
+            padding: 32px;
+            .underwriting-insurance-details {
+                >ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0 20px 20px;
+                    border-radius: 8px;
+                    background: #FAFBFF;
+                    li {
+                        width: calc(100% / 5);
+                        list-style: none;
+                        margin: 24px 0 0;
+                        padding-right: 20px;
+                        word-break: break-all;
+
+                        strong {
+                            display: block;
+                            color: #1e1147a3;
+                            font-weight: 400;
+                        }
+                        span {
+                            font-weight: 600;
+                            display: block;
+                            text-transform: capitalize;
+                            margin-top: 8px;
+                            span.anticon-eye {
+                                display: inline-block;
+                                transform: translateY(-3px);
+                                margin-left: 3px;
+                                cursor: pointer;
+                                color: #b77103;
+                                font-size: 12px;
+                            }
+                            span.anticon-info-circle {
+                                display: inline;
+                                position: relative;
+                                top: -3px;
+                                margin-left: 5px;
+                                color: #e30000;
+                                cursor: pointer;
+                            }
+                            span.anticon.anticon-edit {
+                                display: inline;
+                                position: relative;
+                                top: -3px;
+                                margin-left: 5px;
+                                color: #2c63ff;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .underwriting-policy-steps3-bottom {
+        position: relative;
+        margin-top: 56px;
+
+        .underwriting-insurance-data {
+            border-radius: 10px;
+            background: #fff;
+            margin-top: 32px;
+            box-shadow: 0 0px 20px 0 #00000014;
+            position: relative;
+
+            .sorting {
+                position: absolute;
+                top: -27px;
+                right: 26px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                font-weight: 600;
+                cursor: pointer;
+                z-index: 2;
+
+                i {
+                    color: #000;
+                    font-style: normal;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+
+                    &:hover {
+                        color: #f72485;
+                    }
+                }
+            }
+
+            .ant-tabs {
+                .ant-tabs-nav-wrap {
+                    margin: 0 24px;
+                    padding: 24px 0 0px;
+                    border-bottom: 1px solid #EDEFF5;
+
+                    .ant-tabs-tab-active {
+                        background: #ff137d24;
+                        color: #000;
+
+                        .ant-tabs-tab-btn {
+                            color: #000;
+                        }
+                    }
+
+                    .ant-tabs-tab {
+                        padding: 6px 16px;
+                        margin: 0 0 0 -5px;
+
+                        &:hover {
+                            color: #000;
+                        }
+
+                        .ant-tabs-tab-btn {
+                            font-size: 13px;
+                            color: #1e11477a;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .ant-tabs-ink-bar {
+                        background: #f72485;
+                    }
+                }
+
+                .ant-tabs-nav-operations {
+                    display: none;
+                }
+
+                .ant-tabs-content-holder {
+                    .underwriting-insurance-body {
+                        padding-top: 0;
+
+                        >ul {
+                            padding-left: 20px;
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            >li {
+                                padding: 30px 0;
+                                position: relative;
+                                list-style: none;
+
+                                strong {
+                                    text-transform: capitalize;
+                                    font-weight: 700;
+                                    margin-left: 5px;
+                                }
+
+                                ul {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    padding-left: 20px;
+
+                                    li {
+                                        width: 33%;
+                                        padding-right: 30px;
+                                        margin-top: 7px;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+
+                            li.success {
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 36px;
+                                    left: -14px;
+                                    width: 7px;
+                                    height: 7px;
+                                    background: #5cb85b;
+                                    border-radius: 50%;
+                                }
+
+                                &:after {
+                                    content: "";
+                                    position: absolute;
+                                    top: 43px;
+                                    left: -11px;
+                                    bottom: -40px;
+                                    width: 1px;
+                                    background: #5cb85b;
+                                }
+
+                                &:last-child {
+                                    &:after {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+
+                        ul.order-change {
+                            flex-direction: column-reverse;
+
+                            li.success {
+                                &:first-child {
+                                    &:after {
+                                        display: none;
+                                    }
+                                }
+
+                                &:last-child {
+                                    &:after {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .comments {
+                        .underwriting-insurance-body {
+                            form {
+                                width: 60%;
+                                .ant-btn {
+                                    width: auto;
+                                    padding: 12px 30px;
+                                    &:last-child {
+                                        background: #ccc;
+                                        color: #fff;
+                                        margin-left: 10px;
+                                        &:hover {
+                                            background: #898989;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                            >ul {
+                                width: 100%;
+                                display: flex;
+                                flex-wrap: wrap;
+                                padding-left: 0;
+                                li {
+                                    width: 100%;
+                                    margin-top: 20px;
+                                    list-style: none;
+                                    padding: 0;
+
+                                    strong {
+                                        font-size: 16px;
+                                        text-transform: capitalize;
+                                        font-weight: 600;
+                                        span {
+                                            width: 30px;
+                                            height: 30px;
+                                            background: #ff137d24;
+                                            border-radius: 50%;
+                                            text-align: center;
+                                            display: inline-block;
+                                            line-height: 30px;
+                                            margin-right: 8px;
+                                            font-weight: 500;
+                                        }
+                                        em {
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            margin-left: 20px;
+                                            font-size: 14px;
+                                        }
+                                    }
+                                    >span {
+                                        display: block;
+                                        margin-top: 0px;
+                                        padding-left: 43px;
+                                        font-weight: 500;
+                                        word-break: break-all;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.ant-modal.kyc-status-modal {
+    .ant-modal-body {
+        p {
+            text-align: center;
+            font-weight: 500;
+            font-size: 15px;
+            padding: 15px 0;
+        }
+    }
+}
+
+.ant-modal.kyc-form-modal {
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        .ant-row.ant-form-item {
+            width: calc((100% - 30px) / 3);
+            margin-left: 15px;
+            &:nth-child(3n + 1) {
+                margin-left: 0;
+            }
+            &:last-child {
+                width: 100%;
+                margin-left: 0;
+                margin-bottom: 0;
+                button.ant-btn.ant-btn-primary {
+                    padding: 13px 40px;
+                }
+            }
+
+            input.ant-input {
+                background-color: #fff !important;
+                border: 1px solid #e7e7e7;
+                border-radius: 5px !important;
+                padding: 12px 15px
+            }
+            span.ant-select-selection-item, input#basic_dob {
+                font-weight: 500;
+            }
+        }
+    }
+    button.dismiss-btn {
+        width: 100%;
+        margin-top: 33px;
+    }
+    img {
+        margin: 0 auto;
+        display: block;
+    }
+    p {
+        font-weight: 500;
+        font-size: 17px;
+        text-align: center;
+    }
+}
+.ant-modal.kyc-form-modal.active {
+    .ant-modal-header, button.ant-modal-close {
+        display: none;
+    }
+    .ant-modal-content {
+        .ant-modal-body {
+            background: #FBFBFB;
+            border-radius: 16px;
+            padding: 0 30px 30px;
+        }
+    }
+}

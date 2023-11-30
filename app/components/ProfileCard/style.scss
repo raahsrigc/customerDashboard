@@ -1,0 +1,112 @@
+.profile-main-left {
+    width: 300px;
+    background: #fff;
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 12px;
+    padding: 30px 0;
+    position: sticky;
+    top: -60px;
+    .profile-maine-image {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0 20px;
+        span.profile-image {
+            padding: 0;
+            border-radius: 0;
+            width: 100px;
+            height: 100px;
+            border: 3px solid #fff;
+            position: relative;
+            box-shadow: 0 0.5rem 1.5rem 0.5rem #00000014;
+            &:after {
+                content: "";
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                background: #04cf04;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        i {
+            font-style: normal;
+            margin-left: 20px;
+            font-weight: 600;
+        }
+    }
+    ul.list-email {
+        margin-top: 40px;
+        padding: 0;
+        border: 0;
+        li {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2px 20px;
+            span {
+                width: 60px;
+            }
+            i {
+                font-style: normal;
+                width: calc(100% - 60px);
+                opacity: .5;
+            }
+        }
+    }
+    ul {
+        padding-top: 10px;
+        margin-top: 20px;
+        border-top: 1px solid #efefef;
+        li {
+            list-style: none;
+            padding: 0 20px;
+            margin: 2px 0;
+            position: relative;
+            a {
+                padding: 13px;
+                border-radius: 5px;
+                color: #43435a;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-weight: 500;
+                text-transform: capitalize;
+                position: relative;
+                transition: 300ms ease-in-out;
+                &:hover {
+                    background: #f7248526;
+                    color: #f72485;
+                }
+                span {
+                    font-size: 21px;
+                }
+                i {
+                    font-style: normal;
+                    padding: 1px 0;
+                    width: calc(100% - 33px);
+                    text-align: left;
+                    border-radius: 0px;
+                    display: block;
+                }
+            }
+            a.active {
+                background: #f7248526;
+                color: #f72485;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+.profile-main-left {
+    display: none;
+}
+}

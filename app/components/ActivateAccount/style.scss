@@ -1,0 +1,241 @@
+.activate-account-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    background: #00000096;
+    left: 0;
+    display: none;
+    .activate-account-sidebar-inner {
+        background: #fff;
+        width: 460px;
+        height: 100%;
+        margin: 0 auto;
+        margin-right: 0;
+        transform: translateX(100%);
+        transition: 300ms ease-in-out 0.5s;
+        .activate-account-header {
+            padding: 20px;
+            h4 {
+                span {
+                    position: relative;
+                    top: -4px;
+                    margin-right: 6px;
+                    cursor: pointer;
+                }
+                i {
+                    float: right;
+                    font-style: normal;
+                    width: 30px;
+                    height: 30px;
+                    background: #f72485;
+                    text-align: center;
+                    border-radius: 5px;
+                    color: #fff;
+                    font-weight: 300;
+                    font-size: 22px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 300ms ease-in-out;
+                    &:hover {
+                        background: #29394f;
+                    }
+                }
+            }
+        }
+        .activate-account-body {
+            background: #f5f5fa;
+            height: calc(100vh - 69px);
+            p {
+                padding: 30px 30px;
+            }
+            .step2,
+            .step3 {
+                display: none;
+            }
+            .step2.active,
+            .step3.active {
+                display: block;
+            }
+            .ant-form {
+                .activateAccount-form {
+                    padding: 0 30px 30px;
+                    height: calc(100vh - 230px);
+                    overflow: auto;
+                    &::-webkit-scrollbar {
+                        width:0px;
+                        height: 0;
+                    }
+                    .ant-row.ant-form-item.image-upload {
+                        .ant-form-item-control-input-content {
+                            display: flex;
+                            flex-wrap: wrap;
+                            label.file-upload {
+                                position: relative;
+                                input[type="file"] { 
+                                    position: absolute;
+                                    top: 0;
+                                    opacity: 0;
+                                    left: 0;
+                                    width: 0;
+                                    height: 0;
+                                    background: transparent !important;
+                                    border: 0;
+                                }
+                                >span {
+                                    width: 140px;
+                                    height: 140px;
+                                    background-color: #fafafa;
+                                    border: 1px dashed #d9d9d9;
+                                    display: block;
+                                    cursor: pointer;
+                                    text-align: center;
+                                    font-size: 15px;
+                                    padding: 48px 0;
+                                    span {
+                                        display: block;
+                                        margin-bottom: 5px;
+                                        svg {
+                                            font-size: 18px;
+                                        }
+                                    }
+                                }
+                            }
+                            img {
+                                width: 140px;
+                                height: 140px;
+                                object-fit: cover;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                    .ant-form-item {
+                        .ant-col.ant-form-item-label {
+                            label {
+                                color: #29394f;
+                            }
+                        }
+                        input {
+                            background-color: #fff !important;
+                            border: 1px solid #d9d9d9;                    
+                            &:focus, &:hover {
+                                box-shadow: none;
+                                border-color: #d9d9d9;
+                            }
+                        }    
+                        .ant-select {
+                            .ant-select-selector {
+                                height: auto;
+                                padding: 10px 15px;
+                                border-radius: 8px;
+                                border-color: #d9d9d9 !important;
+                                box-shadow: none;
+                                .ant-select-selection-search {
+                                    left: 15px;
+                                    input {
+                                        height: 100%;
+                                        box-shadow: none;
+                                        border: 0;
+                                    }
+                                }
+                                .ant-select-selection-placeholder {
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    color: #d5d5d5;
+                                }
+                                span.ant-select-selection-item {
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                        .ant-form-item-explain {
+                            font-size: 11px;
+                        }
+                        .ant-picker {
+                            width: 100%;
+                            padding: 0;
+                            border-radius: 8px;
+                            border: 0;
+                            box-shadow: none;
+                            input {
+                                padding: 14px 20px;
+                                border-radius: 8px;
+                                font-weight: 500;
+                                font-size: 15px;
+                            }
+                            span.ant-picker-suffix {
+                                position: absolute;
+                                right: 10px;
+                            }
+                            span.ant-picker-clear {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .activate-account-footer {
+                    padding: 15px 20px;
+                    background: #fff;
+                    button {
+                        width: 100%;
+                        .ant-spin.ant-spin-spinning {
+                            margin-left: 10px;
+                            position: relative;
+                            top: 2px;
+                            .ant-spin-dot {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+            .successfully-account {
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                text-align: center;
+                padding: 0 30px;
+                h2 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.activate-account-sidebar.active {
+    display: block;
+    .activate-account-sidebar-inner {
+        animation: animation 300ms ease-in-out;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes animation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@media screen and (max-width: 991px) {
+.activate-account-sidebar {
+    .activate-account-sidebar-inner {
+        width: 400px;
+    }
+}
+}
+
+@media screen and (max-width: 480px) {
+.activate-account-sidebar {
+    .activate-account-sidebar-inner {
+        width: 320px;
+    }
+}
+}

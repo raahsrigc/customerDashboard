@@ -1,0 +1,157 @@
+.loader {
+    height: 100%;
+}
+.credit-life-policy-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5% 0;
+    .motor-quotation-left {
+        width: 100%;
+        h6 {
+            font-size: 18px;
+        }
+        p {
+            font-weight: 400;
+        }
+        form {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            .ant-form-item {
+                width: calc((100% - 60px) / 3);
+                margin-right: 15px;
+                input.ant-input {
+                    background: #fff !important;
+                    border: 1px solid #e1e1e1;
+                }
+                .ant-btn {
+                    padding: 14px 30px;
+                }
+                &:last-child {
+                    width: 100%;
+                }
+            }
+            .tooltip-input-item {
+                width: calc((100% - 60px) / 3);
+                margin-right: 15px;
+                position: relative;
+                span.input-tooltip {
+                    position: absolute;
+                    z-index: 1;
+                    right: 0;
+                    top: -2px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .bulk-upload {
+            margin-top: 20px;
+            a {
+                color: #f72485;
+                font-size: 13px;
+            }
+            label {
+                background: #fafafa;
+                width: 104px;
+                height: 104px;
+                display: inline-block;
+                border: 2px dashed #d9d9d9;
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                font-size: 13px;
+                cursor: pointer;
+                margin-top: 20px;
+                &:hover {
+                    border-color: #f72485;
+                }
+                input {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    height: 0;
+                }
+            }
+        }
+    }
+    .motor-quotation-right {
+        width: 45%;
+        img {
+            width: 70%;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
+
+.ant-modal.motor-quotation-modal {
+    .ant-modal-header, button.ant-modal-close {
+        display: none;
+    }
+    .ant-modal-body {
+        text-align: center;
+        padding: 0 30px 30px !important; 
+        h6 {
+            font-weight: 500;
+            span.success-blink {
+                animation: success 1s ease-in-out infinite;
+            }
+            @keyframes success {
+                0% {
+                    color: #000;
+                }
+                100% {
+                    color: #5cb85b;
+                }
+            }
+        }
+        button.dismiss-btn {
+            width: 100%;
+            margin-top: 33px;
+        }
+        img {
+            margin: 0 auto;
+            display: block;
+        }
+        p {
+            font-weight: 500;
+            font-size: 17px;
+            text-align: center;
+        }
+    }
+}
+
+.ant-modal.bulk-confirmation, .ant-modal.policy-verify-modal {
+    .ant-modal-body {
+        text-align: center;
+        h6 {
+            font-weight: 500;
+            span.success-blink {
+                animation: success 1s ease-in-out infinite;
+            }
+            @keyframes success {
+                0% {
+                    color: #000;
+                }
+                100% {
+                    color: #5cb85b;
+                }
+            }
+        }
+        button {
+            margin-top: 12px;
+            padding: 11px 20px;
+        }
+        .bulk-duplicate-record {
+            margin-top: 15px;
+            h5 {
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+        }
+    }
+}

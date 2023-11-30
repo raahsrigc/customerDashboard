@@ -1,0 +1,334 @@
+.quotation-main-section {
+    .quotation-card-inner {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        .quotation-card {
+            box-shadow: 0 1.0566px 10.566px #00000026;
+            border-radius: 10px;
+            width: calc((100% - 60px) / 4);
+            margin-left: 20px;
+            padding: 18px;
+            background: #fff;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:nth-child(3n + 1) {
+                margin-left: 0;
+            }
+            &:nth-child(4), &:nth-child(5) {
+                margin-bottom: 0;
+            }
+            p {
+                color: #0000009c;
+                font-weight: 500;
+            }
+            h2 {
+                font-size: 26px;
+                font-weight: 600;
+                margin-top: 15px;
+                line-height: 1;
+            }
+        }
+    }
+    .quotation-data {
+        margin-top: 40px;
+        box-shadow: 0 1.0566px 10.566px #00000026;
+        border-radius: 10px;
+        background: #fff;
+        .quotation-card-header {
+            border-bottom: 1px solid #e6e3e3;
+            padding: 10px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 30px;
+            ul {
+                margin-left: 10px;
+                li {
+                    list-style: none;
+                    background: #4cc9f0;
+                    color: #fff;
+                    padding: 8px 14px;
+                    border-radius: 5px;
+                    border: none;
+                    transition: 300ms ease-in-out;
+                    font-weight: 500;
+                    font-size: 12px;
+                    cursor: pointer;
+                    &:hover {
+                        background: #f72485;
+                    }
+                }
+            }
+        }
+        .quotation-card-body { 
+            padding: 20px;
+            .quotation-no-data {
+                text-align: center;
+                padding: 15% 0;
+                width: 100%;
+                img {
+                    width: 200px;
+                }
+                h6 {
+                    margin-top: 10px;
+                }
+                p {
+                    color: #0000009c;
+                    font-weight: 300;
+                    margin-top: 10px;
+                }
+            }
+            .ant-table-wrapper {
+                text-align: left;
+                .ant-table {
+                    .ant-table-tbody {
+                        tr {
+                            cursor: pointer;
+                            td {
+                                button {
+                                    padding: 9px 16px;
+                                    font-size: 13px;
+                                }
+                                &:last-child {
+                                    >span {
+                                        color: #fff;
+                                        background: #5cb85b;
+                                        display: inline-block;
+                                        padding: 7px 8px;
+                                        border-radius: 5px;
+                                        width: 93px;
+                                        text-align: center;
+                                        &:hover {
+                                            background-color: #3ea93c;
+                                        }
+                                    }
+                                    span.pending-status {
+                                        background: #4cc9f0;
+                                        width: 120px;
+                                    }
+                                    span.re-status {
+                                        background: #29394f;
+                                        width: 120px;
+                                    }
+                                    span.fail-status {
+                                        background: #c72b2beb;
+                                        width: 120px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .underwriting-quotation-header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background: #F2F4FA;
+        border-radius: 8px;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 16px;
+        position: relative;
+        margin-top: 30px;
+        span {
+            background: rgba(30, 17, 71, 0.04);
+            border-radius: 6px;
+            padding: 9px 13px;
+            margin-right: 16px;
+            cursor: pointer;
+            transition: 300ms ease-in-out;
+        }
+        em {
+            font-style: normal;
+        }
+    }
+    .underwriting-insurance-data {
+        border-radius: 10px;
+        background: #fff;
+        margin-top: 12px;
+        box-shadow: 0 0px 20px 0 #00000014;
+        position: relative;
+
+        .underwriting-insurance-header {
+            padding: 24px 24px 4px;
+            border: 0;
+
+            h6 {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                width: calc(100% - 520px);
+
+                span.insured-name {
+                    background: rgba(30, 17, 71, 0.48);
+                    width: 56px;
+                    height: 56px;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    margin-right: 16px;
+                    font-size: 23px;
+                    text-transform: uppercase;
+                }
+
+                >em {
+                    font-style: normal;
+                    width: calc(100% - 91px);
+                    text-transform: capitalize;
+
+                    em {
+                        display: block;
+                        font-size: 14px;
+                        font-style: normal;
+                        margin-top: 5px;
+                        font-weight: 400;
+
+                        strong {
+                            font-weight: 400;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+        .underwriting-insurance-body {
+            padding: 32px;
+            .underwriting-insurance-details {
+                >ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0 20px 20px;
+                    border-radius: 8px;
+                    background: #FAFBFF;
+                    li {
+                        width: calc(100% / 5);
+                        list-style: none;
+                        margin: 24px 0 0;
+                        padding-right: 20px;
+                        word-break: break-all;
+
+                        strong {
+                            display: block;
+                            color: #1e1147a3;
+                            font-weight: 400;
+                        }
+                        span {
+                            font-weight: 600;
+                            display: block;
+                            text-transform: capitalize;
+                            margin-top: 8px;
+                            span.anticon-eye {
+                                display: inline-block;
+                                transform: translateY(-3px);
+                                margin-left: 3px;
+                                cursor: pointer;
+                                color: #b77103;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.ant-modal.kyc-form-modal {
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        .kyc-form-title {
+            width: 100%;
+            text-align: left;
+            margin: 20px 0;
+            &:first-child {
+                margin-top: 0;
+            }
+            h6 {
+                border-bottom: 1px solid #ccc;
+                padding-bottom: 5px;
+                font-size: 15px;
+            }
+        }
+        .kyc-form-items {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            .ant-row.ant-form-item {
+                width: calc((100% - 30px) / 3);
+                margin-left: 15px;
+                &:nth-child(3n + 1) {
+                    margin-left: 0;
+                }
+                input.ant-input {
+                    background-color: #fff !important;
+                    border: 1px solid #e7e7e7;
+                    border-radius: 5px !important;
+                    padding: 12px 15px
+                }
+                input.ant-input.ant-input-disabled {
+                    background-color: #f5f5f5 !important;
+                }
+                span.ant-select-selection-item, input#basic_dob {
+                    font-weight: 500;
+                }
+            }
+            .tooltip-input-item {
+                width: calc((100% - 30px) / 3);
+                margin-left: 15px;
+                position: relative;
+                .ant-row.ant-form-item {
+                    width: 100%;
+                    margin-left: 0;
+                }
+                &:nth-child(3n + 1) {
+                    margin-left: 0;
+                }
+                span.input-tooltip {
+                    position: absolute;
+                    z-index: 1;
+                    right: 0;
+                    top: -2px;
+                    cursor: pointer;
+                }
+            }
+        }
+        button.ant-btn.ant-btn-primary {
+            padding: 13px 40px;
+        }
+    }
+    button.dismiss-btn {
+        width: 100%;
+        margin-top: 33px;
+    }
+    img {
+        margin: 0 auto;
+        display: block;
+    }
+    p {
+        font-weight: 500;
+        font-size: 17px;
+        text-align: center;
+    }
+}
+.ant-modal.kyc-form-modal.active {
+    .ant-modal-header, button.ant-modal-close {
+        display: none;
+    }
+    .ant-modal-content {
+        .ant-modal-body {
+            background: #FBFBFB;
+            border-radius: 16px;
+            padding: 0 30px 30px;
+        }
+    }
+}

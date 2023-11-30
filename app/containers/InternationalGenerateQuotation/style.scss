@@ -1,0 +1,79 @@
+.international-generate-quotation-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5% 0;
+    .international-generate-quotation-left {
+        width: 100%;
+        h6 {
+            font-size: 18px;
+        }
+        p {
+            font-weight: 400;
+        }
+        form {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            .ant-form-item {
+                width: calc((100% - 60px) / 4);
+                margin-right: 15px;
+                input.ant-input {
+                    background: #fff !important;
+                    border: 1px solid #e1e1e1;
+                }
+                .ant-btn {
+                    padding: 14px 30px;
+                }
+                &:last-child {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .international-generate-quotation-right {
+        width: 45%;
+        img {
+            width: 70%;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
+
+.ant-modal.international-generate-quotation-modal {
+    .ant-modal-header, button.ant-modal-close {
+        display: none;
+    }
+    .ant-modal-body {
+        text-align: center;
+        padding: 0 30px 30px !important; 
+        h6 {
+            font-weight: 500;
+            span.success-blink {
+                animation: success 1s ease-in-out infinite;
+            }
+            @keyframes success {
+                0% {
+                    color: #000;
+                }
+                100% {
+                    color: #5cb85b;
+                }
+            }
+        }
+        button.dismiss-btn {
+            width: 100%;
+            margin-top: 33px;
+        }
+        img {
+            margin: 0 auto;
+            display: block;
+        }
+        p {
+            font-weight: 500;
+            font-size: 17px;
+            text-align: center;
+        }
+    }
+}

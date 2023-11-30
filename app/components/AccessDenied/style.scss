@@ -1,0 +1,36 @@
+.access-denied {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    .access-denied-inner {
+        h1 {
+            font-size: 80px;
+            font-weight: 700;
+            color: #ff0000;
+            line-height: 80px;
+        }
+        h2 {
+            font-weight: 600;
+            margin-top: 15px;
+        }
+        a { 
+            background: #f72485;
+            color: #fff;
+            padding: 8px 25px;
+            border-radius: 5px;
+            height: auto;
+            border: none;
+            transition: 300ms ease-in-out;
+            font-size: 15px;
+            font-weight: 500;
+            display: inline-block;
+            margin-top: 15px;
+            &:hover {
+                background: #29394f;
+            }
+        }
+    }
+}
